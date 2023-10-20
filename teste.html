@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro de alunos</title>
+	
+	<style>
+		th {
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	
+	<h2>Cadastro de Alunos</h2>
+	
+	<fieldset style="width: 500px;">
+		<legend>Dados Pessoais</legend>
+		
+		<!-- Action é a página que será carregada após
+		o envio do formulário -->
+		<form action="confirmacao.html" method="get">
+			
+			<table style="width: 500px;">
+				<tr>
+					<th>Nome:</th>
+					<td>
+						<input type="text" name="txtNome"
+							size="50" />
+					</td>
+				</tr>
+				<tr>
+					<th>Senha:</th>
+					<td>
+						<input type="password" 
+							name="txtSenha" size="20" />
+					</td>
+				</tr>
+				<tr>
+					<th>Confirmar:</th>
+					<td>
+						<input type="password" 
+							name="txtSenha" size="20" />
+					</td>
+				</tr>
+				<tr>
+					<th>Gênero:</th>
+					<td>
+						<input type="radio" 
+							name="genero" value="F">
+						Feminino
+						
+						<input type="radio" 
+							name="genero" value="M">
+						Masculino
+						
+						<input type="radio" 
+							name="genero" value="O">
+						Outro
+					</td>
+				</tr>
+				<tr>
+					<th>Formação:</th>
+					<td>
+						<input type="checkbox" 
+							name="chkLic" value="L">
+						Licenciado
+						
+						<input type="checkbox" 
+							name="chkBel" value="B">
+						Bacharel
+						
+						<input type="checkbox" 
+							name="chkEng" value="E">
+						Engenheiro
+					</td>
+				</tr>
+				<tr>
+					<th>Currículo:</th>
+					<td>
+						<input type="file" 
+							name="arquivo" />
+					</td>
+				</tr>
+				<tr>
+					<th>Observações:</th>
+					<td>
+						<textarea name="observacoes" rows="4" cols="30"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<th>Campus:</th>
+					<td>
+						<select name="campus">
+							<option value="CA">Caicó</option>
+							<option value="JC">João Câmara</option>
+							<option value="NAT">Natal</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" 
+						style="text-align: center;">
+						
+						<input type="submit" 
+							value="Enviar"/>
+						<input type="reset"
+							value="Limpar"/>
+					</td>
+				</tr>
+			</table>
+			
+		</form>
+		
+	</fieldset>
+
+
+
+
+
+
+
+</body>
+</html>
